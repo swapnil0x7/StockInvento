@@ -1,8 +1,4 @@
-# React + Vite
+# StockInvento
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📦 Welcome to StockInvento – the ultimate inventory management tool for businesses of all sizes. Seamlessly track, organize, and optimize your stock with StockInvento's intuitive interface and powerful features. From inventory tracking to supply chain management, StockInvento empowers you to stay in control and drive efficiency!
+💼 #InventoryManagement #StockInvento
