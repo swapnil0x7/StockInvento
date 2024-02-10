@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import logo from '../assets/Logo.svg';
 import Google from '../assets/google.svg';
 import { useForm } from 'react-hook-form';
@@ -79,7 +79,7 @@ const Form = () => {
 							{...register('email', {
 								pattern: {
 									value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-									message: 'invalid email address',
+									message: 'Invalid email address',
 								},
 								required: {
 									value: true,
@@ -87,7 +87,7 @@ const Form = () => {
 								},
 							})}
 							placeholder='Enter your email'
-							className='border border-gray-300 p-2 focus:outline-none focus:ring focus:border-blue-500 shadow-sm'
+							className='border border-gray-300 p-2 focus:outline-none focus: focus:border-blue-500 shadow-sm'
 						/>
 						<p style={errorStyle}>{errors.email?.message}</p>
 					</div>
@@ -131,13 +131,8 @@ const Form = () => {
 					</div>
 					<button
 						type='submit'
-						disabled={!isValid}
 						style={buttonStyle}
-						className={
-							isValid
-								? 'bg-blue-500 hover:bg-blue-700 transition-colors duration-300 ease-in-out text-white'
-								: ' cursor-not-allowed bg-blue-500 hover:bg-blue-700 transition-colors duration-300 ease-in-out text-white'
-						}>
+						className='bg-blue-500 hover:bg-blue-700 transition-colors duration-300 ease-in-out text-white'>
 						{isSignUp ? 'Get started' : 'Sign in'}
 					</button>
 
