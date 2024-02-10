@@ -43,25 +43,3 @@ const Login = () => {
 };
 
 export default Login;
-
-{
-	/* <img className='w-48 h-48' src={logo} alt='logo' />
-				<p className='w-full text-center font-bold text-xl mt-2 text-green-500 whitespace-no-wrap overflow-hidden'>
-					<TypeAnimation
-						sequence={[
-							'STOCK INVENTO',
-							1000,
-							'INVENTORY MANAGEMENT',
-							1000,
-							'MODERN INTERFACE',
-							1000,
-							'SEAMLESS STOCK MANAGEMENT',
-							1000,
-						]}
-						wrapper='span'
-						speed={30}
-						style={{ display: 'inline-block' }}
-						repeat={Infinity}
-					/>
-				</p> */
-}

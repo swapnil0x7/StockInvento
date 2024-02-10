@@ -4,7 +4,7 @@ import Google from '../assets/google.svg';
 import { useForm } from 'react-hook-form';
 
 const inputStyle = {
-	width: '25rem',
+	width: '100%',
 	height: '2.5rem',
 	padding: '1rem 0.5rem',
 	marginBottom: '0.5rem',
@@ -14,7 +14,7 @@ const inputStyle = {
 };
 
 const buttonStyle = {
-	width: '25rem',
+	width: '100%',
 	height: '2.5rem',
 	borderRadius: '0.35rem',
 	textAlign: 'center',
@@ -29,7 +29,7 @@ const errorStyle = {
 const Form = () => {
 	const [isSignUp, setIsSignUp] = useState(false);
 	const { register, handleSubmit, formState } = useForm();
-	const { errors, isValid } = formState;
+	const { errors } = formState;
 
 	const onSubmit = (data) => {
 		console.log('formdata : ', data);
@@ -49,10 +49,10 @@ const Form = () => {
 							: 'Welcome back! Please enter your details'}
 					</div>
 				</div>
-				<div className='flex flex-col items-start gap-2 mt-8'>
+				<div className='grid items-start gap-2 mt-8 md:w-[20rem] lg:w-[23rem]'>
 					{isSignUp && (
 						<div className='flex flex-col text-gray-500 text-sm my-1'>
-							<label>Name*</label>
+							<label>Name</label>
 							<input
 								style={inputStyle}
 								type='text'
@@ -142,7 +142,7 @@ const Form = () => {
 						className='relative text-center mt-1 text border border-gray-200 pl-8 hover:bg-gray-100 transition-colors duration-300 ease-in-out'>
 						<img
 							src={Google}
-							className='left-28 absolute w-6 h-6'
+							className='left-24 absolute w-6 h-6'
 							alt='google-logo'></img>
 						Sign in with Google
 					</button>
