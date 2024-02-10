@@ -1,10 +1,11 @@
 import './App.css';
+import Login from './pages/Login';
 
 function App() {
 	return (
 		<>
-			<div className='p-2 m-2 text-center border border-gray-400'>
-				Welcome to StockInvento
+			<div>
+				<Login />
 			</div>
 		</>
 	);
