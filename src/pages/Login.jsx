@@ -1,22 +1,31 @@
 import { TypeAnimation } from 'react-type-animation';
-import logo from '../assets/Logo.svg';
+import logoAnimation from '../assets/animations/Main.json';
 import Form from '../components/Form';
+import Lottie from 'react-lottie';
 
 const Login = () => {
 	return (
 		<main className='grid lg:grid-cols-2'>
-			<div className='h-[100vh] w-full hidden lg:flex flex-col justify-center items-center'>
-				<img className='w-48 h-48' src={logo} alt='logo' />
-				<p className='w-full text-center font-bold text-xl mt-2 text-green-500 whitespace-no-wrap overflow-hidden'>
+			<div className='relative h-[100vh] w-full hidden lg:flex flex-col justify-center items-center'>
+				<Lottie
+					options={{
+						animationData: logoAnimation,
+						loop: true,
+						autoplay: true,
+					}}
+					height={500}
+					width={500}
+				/>
+				<p className='absolute w-full top-[27rem] text-center font-bold text-xs mt-3 text-blue-300 whitespace-no-wrap overflow-hidden'>
 					<TypeAnimation
 						sequence={[
-							'STOCK INVENTO',
+							'INVENTORY MANAGEMENT APPLICATION',
 							1000,
-							'INVENTORY MANAGEMENT',
-							1000,
-							'MODERN INTERFACE',
+							'MODERN USER INTERFACE',
 							1000,
 							'SEAMLESS STOCK MANAGEMENT',
+							1000,
+							'INSTANT ALERTS AND CRITICAL NOTIFICATIONS',
 							1000,
 						]}
 						wrapper='span'
