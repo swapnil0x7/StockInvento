@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import logoAnimation from '../assets/animations/Logo.json';
+import logoAnimation from '../assets/animations/Main.json';
 import Form from '../components/Form';
 import Lottie from 'react-lottie';
 
@@ -16,7 +16,7 @@ const Login = () => {
 					height={500}
 					width={500}
 				/>
-				<p className='absolute w-full top-[30rem] text-center font-bold text-xs mt-2 text-blue-300 whitespace-no-wrap overflow-hidden'>
+				<p className='absolute w-full top-[27rem] text-center font-bold text-xs mt-3 text-blue-300 whitespace-no-wrap overflow-hidden'>
 					<TypeAnimation
 						sequence={[
 							'INVENTORY MANAGEMENT APPLICATION',
