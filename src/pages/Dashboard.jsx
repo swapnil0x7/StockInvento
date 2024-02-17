@@ -21,10 +21,10 @@ const Dashboard = () => {
       </div>
       <div className=" m-1 grid  grid-cols-12 gap-2  ">
         <div className="md:col-span-8 ">
-          <OverViewCard title="Sales Overview" />
+          <OverViewCard title="Purchase Overview" />
         </div>
         <div className="md:col-span-4 ">
-          <SummaryCard title="Inventory Summary" />
+          <SummaryCard title="Product Summary" />
         </div>
       </div>
       <div className=" m-1 grid  grid-cols-12 gap-2  ">
