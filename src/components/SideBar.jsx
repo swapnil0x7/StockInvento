@@ -14,9 +14,9 @@ const SideBar = () => {
       <div>
         {data.map((item) => (
           <p
-            onClick={() => navigate("/")}
+            onClick={() => navigate(item.url)}
             key={item.id}
-            className=" ml-4 flex items-center p-2 text-xl font-bold text-blue-500 cursor-pointer hover:z-10 transform transition-transform hover:scale-110"
+            className=" ml-4 flex items-center p-2 text-xl font-bold  text-slate-600 cursor-pointer hover:z-10 transform transition-transform hover:scale-110"
           >
             <Icon
               icon={item.icon}
@@ -52,15 +52,15 @@ const SideBar = () => {
 export default SideBar;
 
 const data = [
-  { id: 1, icon: "lets-icons:home-duotone", title: "Dashboard", url: "" },
-  { id: 2, icon: "ic:twotone-inventory", title: "Inventory", url: "" },
-  { id: 3, icon: "icon-park-solid:table-report", title: "Reports", url: "" },
-  { id: 4, icon: "carbon:customer", title: "Suppliers", url: "" },
-  { id: 5, icon: "material-symbols-light:orders", title: "Orders", url: "" },
+  { id: 1, icon: "lets-icons:home-duotone", title: "Dashboard", url: "/dashboard" },
+  { id: 2, icon: "ic:twotone-inventory", title: "Inventory", url: "/inventory" },
+  { id: 3, icon: "icon-park-solid:table-report", title: "Reports", url: "/reports" },
+  { id: 4, icon: "carbon:customer", title: "Suppliers", url: "/suppliers" },
+  { id: 5, icon: "material-symbols-light:orders", title: "Orders", url: "/orders" },
   {
     id: 6,
     icon: "lets-icons:order-duotone-line",
     title: "Manage Store",
-    url: "",
+    url: "/manage-store",
   },
 ];
