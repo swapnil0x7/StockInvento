@@ -3,7 +3,7 @@ import SideBar from "../components/SideBar";
 
 const Home = () => {
   return (
-    <div className="bg-slate-300 flex">
+    <div className="bg-slate-200 flex">
       <SideBar />
       <Outlet />
     </div>
